@@ -1,6 +1,6 @@
 # 2020-05-011 - Noisemaker!
 
-## Announcements
+## IMPORTANT Announcements
 
 1. We are no longer do code reviews. We are also no longer forking + creating pull requests. This change is intended to streamline the process and make things more fun for everyone, while making it possible to create a portfolio-ready piece by the end of the afternoon.
 1. Voting has been simplified to a 10-point scale based on the deployed project.
