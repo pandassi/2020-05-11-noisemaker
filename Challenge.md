@@ -1,93 +1,59 @@
-## Today's Objective: Job Application Tracker
+# Today's Objective: Noisemaker!
 
-Everyone here has been through the process of applying for jobs. We all know that it can be a rigorous process. Expert career coaches recommend applying to anywhere between 20 and 200 jobs per week. The average junior developer can expect to apply for jobs for about 6 months before they find their first software development job. That's a total of roughly 500 to 5000 job applications over the course of your job search!
+## Objective
 
-Tracking job applications is very much a personal process that differs from person to person. In this exercise, we will all create job application trackers that are personal to our own job hunt styles. 
+Today's objective is to create a music instrument, audio toy, or noisemaker.
+
+Over the years, audio has fallen out of favour for mainstream web applications and websites for a variety of reasons, including accessibility, design, and user experience. 
+
+But rich, interactive web experiences still make full use of Audio APIs. Audio has been a part of browser experiences for decades.
+
+Here are some cool examples of the Web Audio API in action.
+
+* https://keithwhor.com/music/
+* https://stuartmemo.com/qwerty-hancock/
+* https://stuartmemo.com/smashing-magazine/theremin/
 
 ## Requirements
 
-Create a job application tracker that is personal to you, with some kind of long-term persistence (either a database or using localstorage, or (better) IndexedDB).
+1. When you start, send a message on Discord saying "I've started".
+1. When you finish, send a message on Discord saying "I've finished".
 
-The design can be of your own choosing, and so this project is very open-ended. Here is how you should be thinking about the design process:
+Use the Web Audio API (or a library that wraps around it) to make a musical instrument, audio toy, or a noisemaker.
 
-### SAMPLE Data Model Design
+The only hard requirement are these: 
+1. Sound must be made in response to user interaction. I.e., you cannot create a simple audio player. Your app must respond to user action events.
+2. You must use the Web Audio API, either directly or indirectly.
 
-(this is only a sample of what could be built in 4 hours)
+The requirements are intentionally open-ended to allow developers to create an app that suits their skill level.
 
-The data model is the seed that what will determine the look, feel, and functionality of your application.
+Here are some examples of applications you might decide to make:
 
-Here is a sample data model that I would use if I were to create this application:
+* (Easy  ) A button that creates a sound when the user clicks on it
+* (Easy  ) An area that creates noise as the user drags their mouse over it (see [Theremin](https://stuartmemo.com/smashing-magazine/theremin/))
+* (Medium) A simple synthesizer
+* (Hard  ) A drum machine
+* (Hard  ) A simple game with interesting audio sound effects
 
-```javascript
-    // Options include Applied, PhoneInterviewScheduled, PhoneInterviewComplete, InPersonInterviewScheduled, 
-    // InPersonInterviewComplete, OfferReceived, and Rejected
-    type: "PhoneInterviewComplete",
-    company: "Acme Inc.",
-    jobDescriptionUrl: "Junior Software Developer",
-    notes: "This is a really cool job. The interviewer seemed like a really chill person. I hope they get back to me.",
-    createdAt: Date,
-    updatedAt: Date
-}
-```
+## If you want to win
 
-### SAMPLE plan for UX layout
+Remember: learning is the main reward here. Competing is fun and encouraged, but optional.
 
-(this is only a sample of what could be built in 4 hours)
+However, if you'd like to seriously compete, then keep in mind that more complex and interesting applications will stand a better chance of winning.
 
-For the above data model, I would create the following views:
+### Suggested Libraries
 
-Stuff I consider 'required' for my application:
-1. "List" of job applications, with sort+filter
-1. "Show" view for an individual application
-1. "Create" view for an application
-1. "Update" view for an application
+[ToneJS](https://github.com/Tonejs/Tone.js/) is a pretty good library that you can use. There are others, but this is one of the simpler ones.
 
-Nice to haves (in order of attempt):
-1. (if I have time to build this) Dashboard view with some charts 
-1. (if I have time to build this) On the list view, allow statuses to be updated using dropdowns
-1. (if I have time to build this) Add an iFrame so Google automatically shows up with search results for the "company" field
-1. (if I have time to build this) Add graphs that show me my # of applications over time
-1. (if I have time to build this) Add a "step counter" line on the header that tells me 
+## Frameworks:
 
-### SAMPLE persistence plan
+We recommend you keep it simple and use what you already know. It is completely possible to build this using jQuery. You can use React, Vue, Angular if you wish.
 
-You should build some kind of persistence. This can be a simple localstorage system, or it can be a more elaborate IndexedDB-based system (probably through a library like Dexie). Maybe Firebase.
+## Technology Restrictions
 
-If you are feeling adventurous, you can even build a full stack application.
-
-I'm going to use localStorage to persist my data.
-
-### Or, do your own thing!
-
-You can create something cooler if you wish. Please don't copy/paste old projects, though -- write from scratch, even if you're inspired by the old project :-)
-
-## Restrictions
-
-You must be able to deploy your project online.
-Your project must use JavaScript.
+* Your project must use JavaScript in a browser environment.
 
 There are no other restrictions.
-
-## Technology suggestions
-
-You should use whatever you are most comfortable with.
-
-### Look/feel
-* Skeleton CSS
-* Bulma CSS
-* Bootstrap
-
-### Functionality
-* React
-* Vue
-* Angular
-* Server-rendered HTML (EJS, Pug, Handlebars, Mustache, etc.)
-
-### Persistence
-* LocalStorage
-* IndexedDB (with a library like Dexie)
-* Firebase
-* SQLite / MongoDB / Postgres
 
 ## Tips for success:
 
